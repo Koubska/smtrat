@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: |
           brew update 
-          brew install gmp boost eigen readline
+          brew install gmp boost eigen readline gtest
 
       - uses: actions/checkout@v3
 

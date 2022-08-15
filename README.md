@@ -1,5 +1,7 @@
 # SMT-RAT - Satisfiability-Modulo-Theories Real Algebra Toolbox
 
+[![Build](https://github.com/Koubska/smtrat/actions/workflows/cmake.yml/badge.svg?branch=master)](https://github.com/Koubska/smtrat/actions/workflows/cmake.yml)
+
 **Contact**
 
     Jasper Nalbach <nalbach@cs.rwth-aachen.de>

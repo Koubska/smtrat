@@ -1,4 +1,4 @@
-#find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+#find_package(Boost COMPONENTS uCI_PIPELINE_SOURCEnit_test_framework REQUIRED)
 
 # add_definitions(-DBOOST_TEST_DYN_LINK)
 # 
@@ -18,11 +18,9 @@
 
 add_custom_target(all-tests)
 
-set(GTEST_LIBRARIES GTESTCORE_STATIC GTESTMAIN_STATIC pthread dl)
-
 add_library(TestCommon STATIC Common.cpp)
-target_link_libraries(TestCommon ${GTEST_LIBRARIES})
-add_dependencies(TestCommon resources GTESTCORE_STATIC GTESTMAIN_STATIC)
+target_link_libraries(TestCommon)
+add_dependencies(TestCommon resources)
 
 
 ################################

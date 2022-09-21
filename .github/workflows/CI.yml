@@ -19,10 +19,10 @@ jobs:
             os: ubuntu-22.04
             env: CC=clang CXX=clang++
 
-          - name: macos
-            os: macos-latest
-            bliss: OFF
-            env: CC=cc CXX=c++
+          #- name: macos
+          #  os: macos-latest
+          #  bliss: OFF
+          #  env: CC=cc CXX=c++
     
     name: ${{matrix.name}}
     runs-on: ${{matrix.os}}

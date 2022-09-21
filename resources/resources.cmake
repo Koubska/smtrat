@@ -65,18 +65,6 @@ add_custom_target(carl-required-version
 	VERBATIM
 )
 
-
-##### GTest
-find_package(GTest)
-if(NOT GTEST_FOUND)
-	set(GTEST_VERSION "1.8.0")
-	set(GTEST_ZIPHASH "adfafc8512ab65fd3cf7955ef0100ff5")
-	include(resources/gtest.cmake)
-	unset(GTEST_ZIPHASH)
-endif()
-print_resource_info("GTest" GTESTMAIN_STATIC "${GTEST_VERSION}")
-
-
 ##### Doxygen
 find_package(Doxygen 1.8.14 QUIET)
 if(DOXYGEN_FOUND AND ${CMAKE_VERSION} VERSION_LESS "3.9.0")
